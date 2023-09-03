@@ -1,0 +1,38 @@
+name: Sync Datasets
+on:
+  schedule:
+    - cron: "0 0 * * *" # Run every day at 12:00 AM UTC
+  workflow_dispatch:
+
+jobs:
+  sync_data:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14
+
+      - name: Install Dependencies
+        run: |
+          npm install axios
+          npm install googleapis
+
+      - name: Run Sync Script
+        run: node sync.js
+        env:
+          SHEETS_NEW_API_KEY: ${{ secrets.SHEETS_NEW_API_KEY }}
+          CURRENT_COMMIT: ${{ github.sha }} # This provides the current commit hash
+
+      - name: Commit and Push if changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          commit_message="Updated on $(date +'%Y-%m-%d')"
+          git diff --quiet && git diff --staged --quiet || git commit -m "$commit_message"
+          git push
