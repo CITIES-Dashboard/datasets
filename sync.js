@@ -138,6 +138,10 @@ const main = async (apiKey, databaseUrl, currentCommit) => {
             }
         }
 
+        // Sort projectMetadata to match the order of rawDataTables based on gid
+        const gidOrder = project.rawDataTables.map(dataset => dataset.gid.toString());
+        projectMetadata.sort((a, b) => gidOrder.indexOf(a.id) - gidOrder.indexOf(b.id));
+
         metadata[project.id] = projectMetadata;
     }
 
