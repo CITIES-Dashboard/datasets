@@ -49,6 +49,8 @@ const fetchDataFromGoogleSheet = async (sheetId, gid, apiKey, query, headers) =>
 
         const jsonData = JSON.parse(jsonpBody);
 
+        console.log(jsonData)
+
         if (jsonData.table && jsonData.table.rows) {
             let data = jsonData.table.rows.map(row => row.c.map(cell => cell ? cell.v : ''));
 
