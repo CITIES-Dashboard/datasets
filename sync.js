@@ -40,10 +40,26 @@ const sanitizeGoogleSheetQuery = (query) => {
 // Function to convert JS date to string in YYYY-MM-DD format
 const convertDateFormat = (data) => {
     return data.map(row => {
-        const dateStr = row[0];
-        if (dateStr.startsWith("Date(")) {
-            const [year, month, day] = dateStr.slice(5, -1).split(",").map(Number);
-            row[0] = `${year}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+        let dateStr = row[0];
+        if (dateStr && dateStr.startsWith("Date(")) {
+            // Extract parts of the Date string
+            const parts = dateStr.slice(5, -1).split(",");
+            let [year, month, day, ...rest] = parts.map(str => str.trim());
+
+            // Increment month to correct for zero-based indexing in JS
+            month = (parseInt(month) + 1).toString();
+
+            // Reconstruct the date string in YYYY-MM-DD format
+            dateStr = `${year}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+
+            // If there are additional time details, append them as HH:MM
+            if (rest.length > 0) {
+                const [hour, minute] = rest;
+                dateStr += ` ${String(hour).padStart(2, '0')}:${String(minute).padStart(2, '0')}`;
+            }
+
+            // Update the first element of the row
+            row[0] = dateStr;
         }
         return row;
     });
