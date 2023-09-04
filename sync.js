@@ -41,7 +41,7 @@ const sanitizeGoogleSheetQuery = (query) => {
 const convertDateFormat = (data) => {
     return data.map(row => {
         let dateStr = row[0];
-        if (dateStr && dateStr.startsWith("Date(")) {
+        if (typeof dateStr === 'string' && dateStr.startsWith("Date(")) {
             // Extract parts of the Date string
             const parts = dateStr.slice(5, -1).split(",");
             let [year, month, day, ...rest] = parts.map(str => str.trim());
