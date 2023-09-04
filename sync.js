@@ -65,6 +65,22 @@ const convertDateFormat = (data) => {
     });
 };
 
+// Function to round floating point numbers to 2 decimal places
+const roundFloatingPointsInData = (data) => {
+    return data.map(row =>
+        row.map(cell =>
+            (typeof cell === 'number' && !Number.isInteger(cell)) ? parseFloat(cell.toFixed(2)) : cell
+        )
+    );
+};
+
+// Function to apply all sanitization functions to data
+const sanitizeData = (data) => {
+    data = convertDateFormat(data);
+    data = roundFloatingPointsInData(data);
+    return data;
+};
+
 const fetchDataFromGoogleSheet = async (sheetId, gid, apiKey, query, headers) => {
     const sheetName = await getSheetNameByGid(sheetId, gid, apiKey);
     if (!sheetName) {
@@ -93,7 +109,7 @@ const fetchDataFromGoogleSheet = async (sheetId, gid, apiKey, query, headers) =>
         if (jsonData.table && jsonData.table.rows) {
             let data = jsonData.table.rows.map(row => row.c.map(cell => cell ? cell.v : ''));
 
-            data = convertDateFormat(data);
+            data = sanitizeData(data);
 
             // Include headers if the "headers" property is 1
             if (headers === 1 && jsonData.table.cols) {
@@ -159,7 +175,7 @@ const main = async (apiKey, databaseUrl, currentCommit) => {
             let sanitizedSheetName = "data"; // default
             if (sheetName) {
                 sanitizedSheetName = sheetName.toLowerCase().replace(/ /g, "-").replace(/[^a-z0-9-]/g, "_");
-                fileName = `${project.id}-${sanitizedSheetName}.csv`;
+                fileName = `${sanitizedSheetName}.csv`;
             } else {
                 fileName = `${project.id}-data.csv`;
             }
