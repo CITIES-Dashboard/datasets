@@ -30,7 +30,7 @@ const getSheetNameByGid = async (sheetId, gid, apiKey) => {
     }
 };
 
-const fetchDataFromGoogleSheet = async (sheetId, gid, apiKey) => {
+const fetchDataFromGoogleSheet = async (sheetId, gid, apiKey, query) => {
     const sheetName = await getSheetNameByGid(sheetId, gid, apiKey);
     if (!sheetName) {
         console.error(`Sheet with GID ${gid} not found in spreadsheet ${sheetId}`);
@@ -42,7 +42,7 @@ const fetchDataFromGoogleSheet = async (sheetId, gid, apiKey) => {
         const response = await sheets.spreadsheets.values.get({
             key: apiKey,
             spreadsheetId: sheetId,
-            range: sheetName,
+            range: `${sheetName}!${query}`
         });
         return { sheetName, data: response.data.values || [] };
     } catch (error) {
@@ -88,7 +88,7 @@ const main = async (apiKey, databaseUrl, currentCommit) => {
         const projectMetadata = metadata[project.id] || [];
 
         for (const dataset of project.rawDataTables) {
-            const { sheetName, data } = await fetchDataFromGoogleSheet(project.sheetId, dataset.gid, apiKey);
+            const { sheetName, data } = await fetchDataFromGoogleSheet(project.sheetId, dataset.gid, apiKey, dataset.query);
             const csvData = arrayToCSV(data);
 
             let fileName;
