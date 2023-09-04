@@ -30,6 +30,8 @@ const getSheetNameByGid = async (sheetId, gid, apiKey) => {
     }
 };
 
+const axios = require('axios');
+
 const fetchDataFromGoogleSheet = async (sheetId, gid, apiKey, query) => {
     const sheetName = await getSheetNameByGid(sheetId, gid, apiKey);
     if (!sheetName) {
@@ -40,11 +42,16 @@ const fetchDataFromGoogleSheet = async (sheetId, gid, apiKey, query) => {
     try {
         const queryString = encodeURIComponent(query);
         const url = `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?gid=${gid}&tq=${queryString}&key=${apiKey}`;
-        const response = await fetch(url);
-        const text = await response.text();
-        const jsonpBody = text.slice(5, -2); // Remove "google.visualization.Query.setResponse("
+
+        const response = await axios.get(url);
+        const text = response.data;
+
+        // Parsing the JSONP-like response
+        const jsonpBody = text.slice(47); // Remove "google.visualization.Query.setResponse("
         const jsonData = JSON.parse(jsonpBody);
+
         const data = jsonData.table.rows.map(row => row.c.map(cell => cell ? cell.v : ''));
+
         return { sheetName, data };
     } catch (error) {
         console.error(`Error fetching data for GID ${gid} from spreadsheet ${sheetId}: ${error.message}`);
