@@ -38,8 +38,13 @@ const fetchDataFromGoogleSheet = async (sheetId, gid, apiKey, query, headers) =>
     }
 
     try {
-        const queryString = encodeURIComponent(query);
-        const url = `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?gid=${gid}&tq=${queryString}&key=${apiKey}`;
+        let url = `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?gid=${gid}&key=${apiKey}`;
+
+        // Append the query string if a query is present
+        if (query) {
+            const queryString = encodeURIComponent(query);
+            url += `&tq=${queryString}`;
+        }
 
         const response = await axios.get(url);
         const text = response.data;
@@ -48,8 +53,6 @@ const fetchDataFromGoogleSheet = async (sheetId, gid, apiKey, query, headers) =>
         const jsonpBody = text.slice(47, -2);
 
         const jsonData = JSON.parse(jsonpBody);
-
-        console.log(jsonData)
 
         if (jsonData.table && jsonData.table.rows) {
             let data = jsonData.table.rows.map(row => row.c.map(cell => cell ? cell.v : ''));
@@ -108,7 +111,10 @@ const main = async (apiKey, databaseUrl, currentCommit) => {
         const projectMetadata = metadata[project.id] || [];
 
         for (const dataset of project.rawDataTables) {
-            const { sheetName, data } = await fetchDataFromGoogleSheet(project.sheetId, dataset.gid, apiKey, dataset.query);
+            const gid = dataset.gid;
+            const query = dataset.query || null;
+            const headers = dataset.headers || 0;
+            const { sheetName, data } = await fetchDataFromGoogleSheet(project.sheetId, gid, apiKey, query, headers);
             const csvData = arrayToCSV(data);
 
             let fileName;
