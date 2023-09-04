@@ -38,13 +38,14 @@ const fetchDataFromGoogleSheet = async (sheetId, gid, apiKey, query) => {
     }
 
     try {
-        const sheets = google.sheets({ version: 'v4' });
-        const response = await sheets.spreadsheets.values.get({
-            key: apiKey,
-            spreadsheetId: sheetId,
-            range: `${sheetName}!${query}`
-        });
-        return { sheetName, data: response.data.values || [] };
+        const queryString = encodeURIComponent(query);
+        const url = `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?gid=${gid}&tq=${queryString}&key=${apiKey}`;
+        const response = await fetch(url);
+        const text = await response.text();
+        const jsonpBody = text.slice(5, -2); // Remove "google.visualization.Query.setResponse("
+        const jsonData = JSON.parse(jsonpBody);
+        const data = jsonData.table.rows.map(row => row.c.map(cell => cell ? cell.v : ''));
+        return { sheetName, data };
     } catch (error) {
         console.error(`Error fetching data for GID ${gid} from spreadsheet ${sheetId}: ${error.message}`);
         return { sheetName: null, data: [] };
