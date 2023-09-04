@@ -30,8 +30,6 @@ const getSheetNameByGid = async (sheetId, gid, apiKey) => {
     }
 };
 
-const axios = require('axios');
-
 const fetchDataFromGoogleSheet = async (sheetId, gid, apiKey, query) => {
     const sheetName = await getSheetNameByGid(sheetId, gid, apiKey);
     if (!sheetName) {
