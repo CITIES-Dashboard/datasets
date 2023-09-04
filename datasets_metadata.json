@@ -7,6 +7,12 @@
           "name": "daily",
           "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/air-quality/air-quality-daily.csv",
           "version": "2023-09-04",
+          "sizeInBytes": 404
+        },
+        {
+          "name": "daily",
+          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/5015950f21a354336efb6047c901401d4a52741a/air-quality/air-quality-daily.csv",
+          "version": "2023-09-04",
           "sizeInBytes": 60378
         },
         {
@@ -23,6 +29,12 @@
         {
           "name": "hourly",
           "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/air-quality/air-quality-hourly.csv",
+          "version": "2023-09-04",
+          "sizeInBytes": 542
+        },
+        {
+          "name": "hourly",
+          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/5015950f21a354336efb6047c901401d4a52741a/air-quality/air-quality-hourly.csv",
           "version": "2023-09-04",
           "sizeInBytes": 1537393
         },
@@ -101,6 +113,12 @@
         {
           "name": "daily-food-waste-3-meals",
           "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/food-waste/food-waste-daily-food-waste-3-meals.csv",
+          "version": "2023-09-04",
+          "sizeInBytes": 441
+        },
+        {
+          "name": "daily-food-waste-3-meals",
+          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/5015950f21a354336efb6047c901401d4a52741a/food-waste/food-waste-daily-food-waste-3-meals.csv",
           "version": "2023-09-03",
           "sizeInBytes": 213894
         }
@@ -114,6 +132,12 @@
         {
           "name": "raw-data",
           "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/student-population/student-population-raw-data.csv",
+          "version": "2023-09-04",
+          "sizeInBytes": 270
+        },
+        {
+          "name": "raw-data",
+          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/5015950f21a354336efb6047c901401d4a52741a/student-population/student-population-raw-data.csv",
           "version": "2023-09-03",
           "sizeInBytes": 2478
         }
