@@ -30,10 +30,23 @@ const getSheetNameByGid = async (sheetId, gid, apiKey) => {
     }
 };
 
+// Function to sanitize Google Sheet Query as found in temp_database.json
 const sanitizeGoogleSheetQuery = (query) => {
     return query
         .replace(/LIMIT\s+\d+/gi, '')  // Remove LIMIT clauses
         .replace(/ORDER\s+BY\s+[\w\s,]+/gi, '');  // Remove ORDER BY clauses
+};
+
+// Function to convert JS date to string in YYYY-MM-DD format
+const convertDateFormat = (data) => {
+    return data.map(row => {
+        const dateStr = row[0];
+        if (dateStr.startsWith("Date(")) {
+            const [year, month, day] = dateStr.slice(5, -1).split(",").map(Number);
+            row[0] = `${year}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+        }
+        return row;
+    });
 };
 
 const fetchDataFromGoogleSheet = async (sheetId, gid, apiKey, query, headers) => {
@@ -63,6 +76,8 @@ const fetchDataFromGoogleSheet = async (sheetId, gid, apiKey, query, headers) =>
 
         if (jsonData.table && jsonData.table.rows) {
             let data = jsonData.table.rows.map(row => row.c.map(cell => cell ? cell.v : ''));
+
+            data = convertDateFormat(data);
 
             // Include headers if the "headers" property is 1
             if (headers === 1 && jsonData.table.cols) {
