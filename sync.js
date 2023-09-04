@@ -30,7 +30,7 @@ const getSheetNameByGid = async (sheetId, gid, apiKey) => {
     }
 };
 
-const fetchDataFromGoogleSheet = async (sheetId, gid, apiKey, query) => {
+const fetchDataFromGoogleSheet = async (sheetId, gid, apiKey, query, headers) => {
     const sheetName = await getSheetNameByGid(sheetId, gid, apiKey);
     if (!sheetName) {
         console.error(`Sheet with GID ${gid} not found in spreadsheet ${sheetId}`);
@@ -49,9 +49,20 @@ const fetchDataFromGoogleSheet = async (sheetId, gid, apiKey, query) => {
 
         const jsonData = JSON.parse(jsonpBody);
 
-        const data = jsonData.table.rows.map(row => row.c.map(cell => cell ? cell.v : ''));
+        if (jsonData.table && jsonData.table.rows) {
+            let data = jsonData.table.rows.map(row => row.c.map(cell => cell ? cell.v : ''));
 
-        return { sheetName, data };
+            // Include headers if the "headers" property is 1
+            if (headers === 1 && jsonData.table.cols) {
+                const headerRow = jsonData.table.cols.map(col => col.label);
+                data = [headerRow, ...data];
+            }
+
+            return { sheetName, data };
+        } else {
+            console.error(`Error fetching data for GID ${gid} from spreadsheet ${sheetId}: 'table' or 'rows' missing in response`);
+            return { sheetName: null, data: [] };
+        }
     } catch (error) {
         console.error(`Error fetching data for GID ${gid} from spreadsheet ${sheetId}: ${error.message}`);
         return { sheetName: null, data: [] };
