@@ -30,6 +30,12 @@ const getSheetNameByGid = async (sheetId, gid, apiKey) => {
     }
 };
 
+const sanitizeGoogleSheetQuery = (query) => {
+    return query
+        .replace(/LIMIT\s+\d+/gi, '')  // Remove LIMIT clauses
+        .replace(/ORDER\s+BY\s+[\w\s,]+/gi, '');  // Remove ORDER BY clauses
+};
+
 const fetchDataFromGoogleSheet = async (sheetId, gid, apiKey, query, headers) => {
     const sheetName = await getSheetNameByGid(sheetId, gid, apiKey);
     if (!sheetName) {
@@ -42,7 +48,8 @@ const fetchDataFromGoogleSheet = async (sheetId, gid, apiKey, query, headers) =>
 
         // Append the query string if a query is present
         if (query) {
-            const queryString = encodeURIComponent(query);
+            const sanitizedQuery = sanitizeGoogleSheetQuery(query);
+            const queryString = encodeURIComponent(sanitizedQuery);
             url += `&tq=${queryString}`;
         }
 
