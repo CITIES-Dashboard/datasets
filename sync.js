@@ -30,6 +30,8 @@ const getSheetNameByGid = async (sheetId, gid, apiKey) => {
     }
 };
 
+const axios = require('axios');
+
 const fetchDataFromGoogleSheet = async (sheetId, gid, apiKey, query) => {
     const sheetName = await getSheetNameByGid(sheetId, gid, apiKey);
     if (!sheetName) {
@@ -44,8 +46,9 @@ const fetchDataFromGoogleSheet = async (sheetId, gid, apiKey, query) => {
         const response = await axios.get(url);
         const text = response.data;
 
-        // Parsing the JSONP-like response
-        const jsonpBody = text.slice(47); // Remove "google.visualization.Query.setResponse("
+        // Remove "google.visualization.Query.setResponse(" and the trailing ")"
+        const jsonpBody = text.slice(47, -2);
+
         const jsonData = JSON.parse(jsonpBody);
 
         const data = jsonData.table.rows.map(row => row.c.map(cell => cell ? cell.v : ''));
