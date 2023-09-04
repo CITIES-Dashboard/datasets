@@ -7,6 +7,12 @@
           "name": "daily",
           "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/air-quality/air-quality-daily.csv",
           "version": "2023-09-04",
+          "sizeInBytes": 469
+        },
+        {
+          "name": "daily",
+          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/c1813e8e08eebc51356fbbdd4179c209a9f9435a/air-quality/air-quality-daily.csv",
+          "version": "2023-09-04",
           "sizeInBytes": 404
         },
         {
@@ -29,6 +35,12 @@
         {
           "name": "hourly",
           "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/air-quality/air-quality-hourly.csv",
+          "version": "2023-09-04",
+          "sizeInBytes": 585
+        },
+        {
+          "name": "hourly",
+          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/c1813e8e08eebc51356fbbdd4179c209a9f9435a/air-quality/air-quality-hourly.csv",
           "version": "2023-09-04",
           "sizeInBytes": 520
         },
@@ -60,6 +72,12 @@
         {
           "name": "raw-dataset",
           "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/athletics-fabs-membership/athletics-fabs-membership-raw-dataset.csv",
+          "version": "2023-09-04",
+          "sizeInBytes": 463
+        },
+        {
+          "name": "raw-dataset",
+          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/c1813e8e08eebc51356fbbdd4179c209a9f9435a/athletics-fabs-membership/athletics-fabs-membership-raw-dataset.csv",
           "version": "2023-09-03",
           "sizeInBytes": 585
         }
@@ -71,6 +89,12 @@
         {
           "name": "transformed-dataset",
           "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/athletics-fabs-membership/athletics-fabs-membership-transformed-dataset.csv",
+          "version": "2023-09-04",
+          "sizeInBytes": 4395
+        },
+        {
+          "name": "transformed-dataset",
+          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/c1813e8e08eebc51356fbbdd4179c209a9f9435a/athletics-fabs-membership/athletics-fabs-membership-transformed-dataset.csv",
           "version": "2023-09-03",
           "sizeInBytes": 4207
         }
@@ -84,6 +108,12 @@
         {
           "name": "by-hour",
           "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/athletic-facilities-check-in/athletic-facilities-check-in-by-hour.csv",
+          "version": "2023-09-04",
+          "sizeInBytes": 261
+        },
+        {
+          "name": "by-hour",
+          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/c1813e8e08eebc51356fbbdd4179c209a9f9435a/athletic-facilities-check-in/athletic-facilities-check-in-by-hour.csv",
           "version": "2023-09-03",
           "sizeInBytes": 265
         }
@@ -106,6 +136,12 @@
         {
           "name": "by-month",
           "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/athletic-facilities-check-in/athletic-facilities-check-in-by-month.csv",
+          "version": "2023-09-04",
+          "sizeInBytes": 221
+        },
+        {
+          "name": "by-month",
+          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/c1813e8e08eebc51356fbbdd4179c209a9f9435a/athletic-facilities-check-in/athletic-facilities-check-in-by-month.csv",
           "version": "2023-09-03",
           "sizeInBytes": 250
         }
@@ -119,6 +155,12 @@
         {
           "name": "daily-food-waste-3-meals",
           "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/food-waste/food-waste-daily-food-waste-3-meals.csv",
+          "version": "2023-09-04",
+          "sizeInBytes": 507
+        },
+        {
+          "name": "daily-food-waste-3-meals",
+          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/c1813e8e08eebc51356fbbdd4179c209a9f9435a/food-waste/food-waste-daily-food-waste-3-meals.csv",
           "version": "2023-09-04",
           "sizeInBytes": 441
         },
@@ -138,6 +180,12 @@
         {
           "name": "raw-data",
           "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/student-population/student-population-raw-data.csv",
+          "version": "2023-09-04",
+          "sizeInBytes": 402
+        },
+        {
+          "name": "raw-data",
+          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/c1813e8e08eebc51356fbbdd4179c209a9f9435a/student-population/student-population-raw-data.csv",
           "version": "2023-09-04",
           "sizeInBytes": 270
         },
