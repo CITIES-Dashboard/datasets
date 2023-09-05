@@ -167,7 +167,7 @@ const main = async (apiKey, databaseUrl, currentCommit) => {
         for (const dataset of project.rawDataTables) {
             const gid = dataset.gid;
             const query = dataset.query || null;
-            const headers = dataset.headers || 0;
+            const headers = dataset.headers || 1; // default headers is 1
             const { sheetName, data } = await fetchDataFromGoogleSheet(project.sheetId, gid, apiKey, query, headers);
             const csvData = arrayToCSV(data);
 
