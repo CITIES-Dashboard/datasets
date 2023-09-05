@@ -1,28 +1,17 @@
 {
   "air-quality": [
     {
-      "id": "584789045",
-      "versions": [
-        {
-          "name": "daily",
-          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/air-quality/daily.csv",
-          "version": "2023-09-05",
-          "sizeInBytes": 29860
-        },
-        {
-          "name": "daily",
-          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/ab01fc62825652681f4e21c7b27f74fcf3677b33/air-quality/daily.csv",
-          "version": "2023-09-04",
-          "sizeInBytes": 29809
-        }
-      ]
-    },
-    {
       "id": "19993990",
       "versions": [
         {
           "name": "hourly",
           "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/air-quality/hourly.csv",
+          "version": "2023-09-05",
+          "sizeInBytes": 1371188
+        },
+        {
+          "name": "hourly",
+          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/6444bef3e2ae95a2d6e1ad46840fa050b56d36ca/air-quality/hourly.csv",
           "version": "2023-09-05",
           "sizeInBytes": 817315
         },
@@ -31,6 +20,29 @@
           "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/ab01fc62825652681f4e21c7b27f74fcf3677b33/air-quality/hourly.csv",
           "version": "2023-09-04",
           "sizeInBytes": 816713
+        }
+      ]
+    },
+    {
+      "id": "584789045",
+      "versions": [
+        {
+          "name": "daily",
+          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/air-quality/daily.csv",
+          "version": "2023-09-05",
+          "sizeInBytes": 53042
+        },
+        {
+          "name": "daily",
+          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/6444bef3e2ae95a2d6e1ad46840fa050b56d36ca/air-quality/daily.csv",
+          "version": "2023-09-05",
+          "sizeInBytes": 29860
+        },
+        {
+          "name": "daily",
+          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/ab01fc62825652681f4e21c7b27f74fcf3677b33/air-quality/daily.csv",
+          "version": "2023-09-04",
+          "sizeInBytes": 29809
         }
       ]
     }
