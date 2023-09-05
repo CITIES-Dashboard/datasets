@@ -208,9 +208,19 @@ const main = async (apiKey, databaseUrl, currentCommit) => {
                     projectMetadata.push(datasetEntry);
                 }
 
-                // If there's a previous version, update its rawLink to include the commit hash
+                // If there's a previous version
                 if (datasetEntry.versions.length > 0) {
+                    // Update its rawLink to include the commit hash
                     datasetEntry.versions[0].rawLink = currentCommitRawLink;
+                    
+                    // Go through all versions and find the number of versions
+                    // with the same date as the current version
+                    const numVersionsWithSameDate = datasetEntry.versions.filter(version => version.version === currentVersion.version).length;
+                    // If there already exists a version with the same date
+                    // append a number to the version (such as v2, v3, etc.)
+                    if (numVersionsWithSameDate > 0) {
+                        currentVersion.version += ` v${numVersionsWithSameDate + 1}`;
+                    }
                 }
 
                 // Prepend the new version
