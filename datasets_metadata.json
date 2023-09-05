@@ -78,6 +78,12 @@
         {
           "name": "raw-dataset",
           "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/athletics-fabs-membership/raw-dataset.csv",
+          "version": "2023-09-05",
+          "sizeInBytes": 597
+        },
+        {
+          "name": "raw-dataset",
+          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/5a3907100db86657e192bba349da2367ad9621bc/athletics-fabs-membership/raw-dataset.csv",
           "version": "2023-09-04",
           "sizeInBytes": 463
         }
@@ -89,6 +95,12 @@
         {
           "name": "transformed-dataset",
           "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/athletics-fabs-membership/transformed-dataset.csv",
+          "version": "2023-09-05",
+          "sizeInBytes": 4202
+        },
+        {
+          "name": "transformed-dataset",
+          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/5a3907100db86657e192bba349da2367ad9621bc/athletics-fabs-membership/transformed-dataset.csv",
           "version": "2023-09-04",
           "sizeInBytes": 3713
         }
