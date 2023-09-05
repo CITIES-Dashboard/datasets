@@ -31,11 +31,11 @@ const getSheetNameByGid = async (sheetId, gid, apiKey) => {
 };
 
 // Function to sanitize Google Sheet Query as found in temp_database.json
-const sanitizeGoogleSheetQuery = (query) => {
-    return query
-        .replace(/LIMIT\s+\d+/gi, '')  // Remove LIMIT clauses
-        .replace(/ORDER\s+BY\s+[\w\s,]+/gi, '');  // Remove ORDER BY clauses
-};
+// const sanitizeGoogleSheetQuery = (query) => {
+//     return query
+//         .replace(/LIMIT\s+\d+/gi, '')  // Remove LIMIT clauses
+//         .replace(/ORDER\s+BY\s+[\w\s,]+/gi, '');  // Remove ORDER BY clauses
+// };
 
 // Function to convert JS date to string in YYYY-MM-DD format
 const convertDateFormat = (data) => {
@@ -93,8 +93,8 @@ const fetchDataFromGoogleSheet = async (sheetId, gid, apiKey, query, headers) =>
 
         // Append the query string if a query is present
         if (query) {
-            const sanitizedQuery = sanitizeGoogleSheetQuery(query);
-            const queryString = encodeURIComponent(sanitizedQuery);
+            // const sanitizedQuery = sanitizeGoogleSheetQuery(query);
+            const queryString = encodeURIComponent(query);
             url += `&tq=${queryString}`;
         }
 
