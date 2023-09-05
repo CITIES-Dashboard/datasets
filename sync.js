@@ -112,10 +112,10 @@ const fetchDataFromGoogleSheet = async (sheetId, gid, apiKey, query, headers) =>
             data = sanitizeData(data);
 
             // Include headers if the "headers" property is 1
-            if (headers === 1 && jsonData.table.cols) {
-                const headerRow = jsonData.table.cols.map(col => col.label);
-                data = [headerRow, ...data];
-            }
+            // if (headers === 1 && jsonData.table.cols) {
+            //     const headerRow = jsonData.table.cols.map(col => col.label);
+            //     data = [headerRow, ...data];
+            // }
 
             return { sheetName, data };
         } else {
