@@ -148,13 +148,19 @@
       "id": "560722866",
       "versions": [
         {
-          "name": "raw-dataset",
-          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/cc917c619b2ec291593de974c45048c77d3cf41a/athletics-fabs-membership/raw-_original-11-types-of-fabs-accounts_.csv",
+          "name": "raw-_original-11-types-of-fabs-accounts_",
+          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/athletics-fabs-membership/raw-_original-11-types-of-fabs-accounts_.csv",
+          "version": "2023-09-09",
+          "sizeInBytes": 592
+        },
+        {
+          "name": "raw-_original-11-types-of-fabs-accounts_",
+          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/7cc440c419823f4e2bfb173bf329bfdb2c8c2e79/athletics-fabs-membership/raw-_original-11-types-of-fabs-accounts_.csv",
           "version": "2023-09-05",
           "sizeInBytes": 597
         },
         {
-          "name": "raw-dataset",
+          "name": "raw-_original-11-types-of-fabs-accounts_",
           "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/5a3907100db86657e192bba349da2367ad9621bc/athletics-fabs-membership/raw-dataset.csv",
           "version": "2023-09-04",
           "sizeInBytes": 463
@@ -165,13 +171,19 @@
       "id": "337720664",
       "versions": [
         {
-          "name": "transformed-dataset",
-          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/cc917c619b2ec291593de974c45048c77d3cf41a/athletics-fabs-membership/transformed-_regrouped-to-4-demographic-groups_.csv",
+          "name": "transformed-_regrouped-to-4-demographic-groups_",
+          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/athletics-fabs-membership/transformed-_regrouped-to-4-demographic-groups_.csv",
+          "version": "2023-09-09",
+          "sizeInBytes": 300
+        },
+        {
+          "name": "transformed-_regrouped-to-4-demographic-groups_",
+          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/7cc440c419823f4e2bfb173bf329bfdb2c8c2e79/athletics-fabs-membership/transformed-_regrouped-to-4-demographic-groups_.csv",
           "version": "2023-09-05",
           "sizeInBytes": 4202
         },
         {
-          "name": "transformed-dataset",
+          "name": "transformed-_regrouped-to-4-demographic-groups_",
           "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/5a3907100db86657e192bba349da2367ad9621bc/athletics-fabs-membership/transformed-dataset.csv",
           "version": "2023-09-04",
           "sizeInBytes": 3713
