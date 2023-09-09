@@ -171,6 +171,16 @@ const main = async (apiKey, databaseUrl, currentCommit) => {
             const { sheetName, data } = await fetchDataFromGoogleSheet(project.sheetId, gid, apiKey, query, headers);
             const csvData = arrayToCSV(data);
 
+            // Check for any existing .csv files corresponding to this gid
+            let existingCsvFile = null;
+            for (const entry of projectMetadata) {
+                if (entry.id === gid.toString() && entry.versions.length > 0) {
+                    const oldName = entry.versions[0].name;
+                    existingCsvFile = `${projectPath}/${oldName}.csv`;
+                    break;
+                }
+            }
+
             let fileName;
             let sanitizedSheetName = "data"; // default
             if (sheetName) {
@@ -181,6 +191,9 @@ const main = async (apiKey, databaseUrl, currentCommit) => {
             }
 
             const filePath = `${projectPath}/${fileName}`;
+            if (existingCsvFile && existingCsvFile !== filePath) {
+                fs.renameSync(existingCsvFile, filePath);
+            }    
             const oldCSVData = fs.existsSync(filePath) ? fs.readFileSync(filePath, 'utf-8') : "";
             const oldHash = computeHash(oldCSVData);
             const newHash = computeHash(csvData);
@@ -212,7 +225,7 @@ const main = async (apiKey, databaseUrl, currentCommit) => {
                 if (datasetEntry.versions.length > 0) {
                     // Update its rawLink to include the commit hash
                     datasetEntry.versions[0].rawLink = currentCommitRawLink;
-                    
+
                     // Go through all versions and find the number of versions
                     // with the same date as the current version
                     const numVersionsWithSameDate = datasetEntry.versions.filter(version => version.version === currentVersion.version).length;
