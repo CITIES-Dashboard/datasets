@@ -173,13 +173,10 @@ const main = async (apiKey, databaseUrl, currentCommit) => {
 
             // Check for any existing .csv files corresponding to this gid
             let existingCsvFile = null;
-            // Also check for corresponding metadata entries
-            let metadataEntryToUpdate = null;
             for (const entry of projectMetadata) {
                 if (entry.id === gid.toString() && entry.versions.length > 0) {
                     const oldName = entry.versions[0].name;
                     existingCsvFile = `${projectPath}/${oldName}.csv`;
-                    metadataEntryToUpdate = entry;
                     break;
                 }
             }
@@ -196,14 +193,7 @@ const main = async (apiKey, databaseUrl, currentCommit) => {
             const filePath = `${projectPath}/${fileName}`;
             if (existingCsvFile && existingCsvFile !== filePath) {
                 fs.renameSync(existingCsvFile, filePath);
-
-                // Update the name in all metadata entries for this gid
-                if (metadataEntryToUpdate) {
-                    metadataEntryToUpdate.versions.forEach(version => {
-                        version.name = sanitizedSheetName;
-                    });
-                }
-            }
+            }    
             const oldCSVData = fs.existsSync(filePath) ? fs.readFileSync(filePath, 'utf-8') : "";
             const oldHash = computeHash(oldCSVData);
             const newHash = computeHash(csvData);
