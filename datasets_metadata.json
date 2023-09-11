@@ -156,12 +156,6 @@
         {
           "name": "raw-_original-11-types-of-fabs-accounts_",
           "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/athletics-fabs-membership/raw-_original-11-types-of-fabs-accounts_.csv",
-          "version": "2023-09-11 v2",
-          "sizeInBytes": 592
-        },
-        {
-          "name": "raw-_original-11-types-of-fabs-accounts_",
-          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/8e586dc1cfddf8a4faf227768a13cd83bbdbacc6/athletics-fabs-membership/raw-_original-11-types-of-fabs-accounts_.csv",
           "version": "2023-09-11",
           "sizeInBytes": 592
         },
@@ -185,12 +179,6 @@
         {
           "name": "transformed-_regrouped-to-4-demographic-groups_",
           "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/athletics-fabs-membership/transformed-_regrouped-to-4-demographic-groups_.csv",
-          "version": "2023-09-11 v2",
-          "sizeInBytes": 300
-        },
-        {
-          "name": "transformed-_regrouped-to-4-demographic-groups_",
-          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/8e586dc1cfddf8a4faf227768a13cd83bbdbacc6/athletics-fabs-membership/transformed-_regrouped-to-4-demographic-groups_.csv",
           "version": "2023-09-11",
           "sizeInBytes": 300
         },
