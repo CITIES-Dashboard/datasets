@@ -173,10 +173,11 @@ const main = async (apiKey, databaseUrl, currentCommit) => {
 
             // Check for any existing .csv files corresponding to this gid
             let existingCsvFile = null;
+            let existingFileName = null;
             for (const entry of projectMetadata) {
                 if (entry.id === gid.toString() && entry.versions.length > 0) {
-                    const oldName = entry.versions[0].name;
-                    existingCsvFile = `${projectPath}/${oldName}.csv`;
+                    existingFileName = entry.versions[0].name;
+                    existingCsvFile = `${projectPath}/${existingFileName}.csv`;
                     break;
                 }
             }
@@ -193,7 +194,7 @@ const main = async (apiKey, databaseUrl, currentCommit) => {
             const filePath = `${projectPath}/${fileName}`;
             if (existingCsvFile && existingCsvFile !== filePath) {
                 fs.renameSync(existingCsvFile, filePath);
-            }    
+            }
             const oldCSVData = fs.existsSync(filePath) ? fs.readFileSync(filePath, 'utf-8') : "";
             const oldHash = computeHash(oldCSVData);
             const newHash = computeHash(csvData);
@@ -202,7 +203,9 @@ const main = async (apiKey, databaseUrl, currentCommit) => {
                 fs.writeFileSync(filePath, csvData);
 
                 const rawLinkLatest = `https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/${project.id}/${fileName}`;
-                const currentCommitRawLink = `https://raw.githubusercontent.com/CITIES-Dashboard/datasets/${currentCommit}/${project.id}/${fileName}`;
+                const currentCommitRawLink = existingFileName
+                    ? `https://raw.githubusercontent.com/CITIES-Dashboard/datasets/${currentCommit}/${project.id}/${existingFileName}.csv`
+                    : `https://raw.githubusercontent.com/CITIES-Dashboard/datasets/${currentCommit}/${project.id}/${fileName}.csv`;
                 const size = getCSVFileSize(filePath);
                 const currentVersion = {
                     name: sanitizedSheetName,
