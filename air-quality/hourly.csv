@@ -21456,3 +21456,27 @@ time,outdoor_PM2.5_conc_(µg/m3),outdoor_US_AQI,outdoor_category,c2_PM2.5_conc_(
 2023-09-12 01:00,55.6,151,Unhealthy,20.6,68,Moderate,17.8,62,Moderate
 2023-09-12 02:00,39.7,111,Unhealthy for Sensitive Groups,18.5,64,Moderate,17.9,63,Moderate
 2023-09-12 03:00,36.6,103,Unhealthy for Sensitive Groups,14.6,56,Moderate,13.5,53,Moderate
+2023-09-12 04:00,34.7,98,Moderate,12.6,52,Moderate,12.4,51,Moderate
+2023-09-12 05:00,36,102,Unhealthy for Sensitive Groups,11.8,49,Good,10.8,45,Good
+2023-09-12 06:00,33.6,96,Moderate,9.5,39,Good,16.1,59,Moderate
+2023-09-12 07:00,35.7,101,Unhealthy for Sensitive Groups,8.4,35,Good,14.7,56,Moderate
+2023-09-12 08:00,31,90,Moderate,6.6,27,Good,11.3,47,Good
+2023-09-12 09:00,38.2,107,Unhealthy for Sensitive Groups,4.8,20,Good,9.9,41,Good
+2023-09-12 10:00,32.5,93,Moderate,4.9,20,Good,8.7,36,Good
+2023-09-12 11:00,22.9,73,Moderate,4.1,17,Good,8.7,36,Good
+2023-09-12 12:00,19,65,Moderate,3.5,14,Good,11.4,47,Good
+2023-09-12 13:00,16.9,61,Moderate,3.4,14,Good,16.1,59,Moderate
+2023-09-12 14:00,19.6,66,Moderate,3.3,13,Good,11.1,46,Good
+2023-09-12 15:00,19.5,66,Moderate,3.3,13,Good,5.5,22,Good
+2023-09-12 16:00,22.8,73,Moderate,3.1,12,Good,5.7,23,Good
+2023-09-12 17:00,23.8,75,Moderate,2.8,11,Good,5.7,23,Good
+2023-09-12 18:00,23.7,75,Moderate,3.1,12,Good,14.7,56,Moderate
+2023-09-12 19:00,28.8,86,Moderate,3.6,15,Good,18.7,64,Moderate
+2023-09-12 20:00,44.8,123,Unhealthy for Sensitive Groups,4.2,17,Good,13.2,53,Moderate
+2023-09-12 21:00,38,107,Unhealthy for Sensitive Groups,5.2,21,Good,12.6,52,Moderate
+2023-09-12 22:00,36.4,103,Unhealthy for Sensitive Groups,6.5,27,Good,8.6,35,Good
+2023-09-12 23:00,40.5,113,Unhealthy for Sensitive Groups,7.6,31,Good,8.7,36,Good
+2023-09-13 00:00,40.9,114,Unhealthy for Sensitive Groups,8.6,35,Good,9.2,38,Good
+2023-09-13 01:00,46.7,128,Unhealthy for Sensitive Groups,10.2,42,Good,9.8,40,Good
+2023-09-13 02:00,43.7,121,Unhealthy for Sensitive Groups,11.3,47,Good,10,41,Good
+2023-09-13 03:00,46.2,127,Unhealthy for Sensitive Groups,10,41,Good,9.6,40,Good
