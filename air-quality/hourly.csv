@@ -21480,3 +21480,27 @@ time,outdoor_PM2.5_conc_(µg/m3),outdoor_US_AQI,outdoor_category,c2_PM2.5_conc_(
 2023-09-13 01:00,46.7,128,Unhealthy for Sensitive Groups,10.2,42,Good,9.8,40,Good
 2023-09-13 02:00,43.7,121,Unhealthy for Sensitive Groups,11.3,47,Good,10,41,Good
 2023-09-13 03:00,46.2,127,Unhealthy for Sensitive Groups,10,41,Good,9.6,40,Good
+2023-09-13 04:00,54,146,Unhealthy for Sensitive Groups,10.9,45,Good,9.3,38,Good
+2023-09-13 05:00,52,141,Unhealthy for Sensitive Groups,10.5,43,Good,9.6,40,Good
+2023-09-13 06:00,33.9,96,Moderate,7.9,32,Good,7.6,31,Good
+2023-09-13 07:00,54.8,148,Unhealthy for Sensitive Groups,6.5,27,Good,7.4,30,Good
+2023-09-13 08:00,46.5,128,Unhealthy for Sensitive Groups,5.7,23,Good,7.5,31,Good
+2023-09-13 09:00,30.2,89,Moderate,5.5,22,Good,9,37,Good
+2023-09-13 10:00,27.9,84,Moderate,5.7,23,Good,8.5,35,Good
+2023-09-13 11:00,24.7,77,Moderate,4.8,20,Good,7.5,31,Good
+2023-09-13 12:00,21.1,69,Moderate,5.2,21,Good,20.8,69,Moderate
+2023-09-13 13:00,21.1,69,Moderate,6.2,25,Good,15.9,58,Moderate
+2023-09-13 14:00,27.3,82,Moderate,6.1,25,Good,18.9,65,Moderate
+2023-09-13 15:00,48.4,132,Unhealthy for Sensitive Groups,8.2,34,Good,20,67,Moderate
+2023-09-13 16:00,69.9,158,Unhealthy,13.8,54,Moderate,26.5,81,Moderate
+2023-09-13 17:00,85,166,Unhealthy,18.6,64,Moderate,40.3,112,Unhealthy for Sensitive Groups
+2023-09-13 18:00,102.2,175,Unhealthy,22.3,72,Moderate,49,134,Unhealthy for Sensitive Groups
+2023-09-13 19:00,110,179,Unhealthy,29.6,87,Moderate,55.6,151,Unhealthy
+2023-09-13 20:00,106.1,177,Unhealthy,33.1,95,Moderate,57.2,151,Unhealthy
+2023-09-13 21:00,104.8,176,Unhealthy,34,97,Moderate,62.7,154,Unhealthy
+2023-09-13 22:00,95.8,171,Unhealthy,36.1,102,Unhealthy for Sensitive Groups,45.6,125,Unhealthy for Sensitive Groups
+2023-09-13 23:00,95.3,171,Unhealthy,38.9,109,Unhealthy for Sensitive Groups,40.2,112,Unhealthy for Sensitive Groups
+2023-09-14 00:00,105,176,Unhealthy,41.1,114,Unhealthy for Sensitive Groups,38.4,108,Unhealthy for Sensitive Groups
+2023-09-14 01:00,103.5,175,Unhealthy,40,112,Unhealthy for Sensitive Groups,38.8,109,Unhealthy for Sensitive Groups
+2023-09-14 02:00,105.6,176,Unhealthy,40.9,114,Unhealthy for Sensitive Groups,40.8,114,Unhealthy for Sensitive Groups
+2023-09-14 03:00,111.7,180,Unhealthy,39.8,111,Unhealthy for Sensitive Groups,43.1,119,Unhealthy for Sensitive Groups
