@@ -11,12 +11,6 @@
         },
         {
           "name": "daily",
-          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/0573d4b4f01ece307a74331346b4ba3a2fa54bd8/air-quality/daily.csv",
-          "version": "2023-09-15",
-          "sizeInBytes": 53800
-        },
-        {
-          "name": "daily",
           "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/62a0692d9ef50b19f560944d31bfc4536efd9963/air-quality/daily.csv",
           "version": "2023-09-14",
           "sizeInBytes": 53689
@@ -66,32 +60,8 @@
         {
           "name": "daily",
           "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/c12e72f4a2fb1f5cb1f7909dd79fd7a12340fcc8/air-quality/daily.csv",
-          "version": "2023-09-05 v5",
+          "version": "2023-09-05",
           "sizeInBytes": 13850
-        },
-        {
-          "name": "daily",
-          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/dc67c743028842be84dab2e2a61457a1283c2530/air-quality/daily.csv",
-          "version": "2023-09-05",
-          "sizeInBytes": 53042
-        },
-        {
-          "name": "daily",
-          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/7532471d698c64add600554bdd575d5b975cf4eb/air-quality/daily.csv",
-          "version": "2023-09-05",
-          "sizeInBytes": 52887
-        },
-        {
-          "name": "daily",
-          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/7e2719a439d45de00157b083833e5ccb04f5b67f/air-quality/daily.csv",
-          "version": "2023-09-05",
-          "sizeInBytes": 53042
-        },
-        {
-          "name": "daily",
-          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/6444bef3e2ae95a2d6e1ad46840fa050b56d36ca/air-quality/daily.csv",
-          "version": "2023-09-05",
-          "sizeInBytes": 29860
         },
         {
           "name": "daily",
@@ -137,14 +107,8 @@
         {
           "name": "hourly",
           "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/fe45d91682ed8c7c6105f39e3f8d6da77abed203/air-quality/hourly.csv",
-          "version": "2023-09-09 v2",
-          "sizeInBytes": 1377961
-        },
-        {
-          "name": "hourly",
-          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/e544ff50820f94858ba9ac881ade818eea2a1976/air-quality/hourly.csv",
           "version": "2023-09-09",
-          "sizeInBytes": 1377766
+          "sizeInBytes": 1377961
         },
         {
           "name": "hourly",
@@ -167,32 +131,8 @@
         {
           "name": "hourly",
           "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/c12e72f4a2fb1f5cb1f7909dd79fd7a12340fcc8/air-quality/hourly.csv",
-          "version": "2023-09-05 v5",
+          "version": "2023-09-05",
           "sizeInBytes": 1371530
-        },
-        {
-          "name": "hourly",
-          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/dc67c743028842be84dab2e2a61457a1283c2530/air-quality/hourly.csv",
-          "version": "2023-09-05",
-          "sizeInBytes": 1371188
-        },
-        {
-          "name": "hourly",
-          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/7532471d698c64add600554bdd575d5b975cf4eb/air-quality/hourly.csv",
-          "version": "2023-09-05",
-          "sizeInBytes": 1371033
-        },
-        {
-          "name": "hourly",
-          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/7e2719a439d45de00157b083833e5ccb04f5b67f/air-quality/hourly.csv",
-          "version": "2023-09-05",
-          "sizeInBytes": 1371188
-        },
-        {
-          "name": "hourly",
-          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/6444bef3e2ae95a2d6e1ad46840fa050b56d36ca/air-quality/hourly.csv",
-          "version": "2023-09-05",
-          "sizeInBytes": 817315
         },
         {
           "name": "hourly",
@@ -263,12 +203,6 @@
         },
         {
           "name": "by-hour",
-          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/7532471d698c64add600554bdd575d5b975cf4eb/athletic-facilities-check-in/by-hour.csv",
-          "version": "2023-09-05",
-          "sizeInBytes": 153
-        },
-        {
-          "name": "by-hour",
           "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/7e2719a439d45de00157b083833e5ccb04f5b67f/athletic-facilities-check-in/by-hour.csv",
           "version": "2023-09-04",
           "sizeInBytes": 261
@@ -286,12 +220,6 @@
         },
         {
           "name": "by-day",
-          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/7532471d698c64add600554bdd575d5b975cf4eb/athletic-facilities-check-in/by-day.csv",
-          "version": "2023-09-05",
-          "sizeInBytes": 91
-        },
-        {
-          "name": "by-day",
           "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/7e2719a439d45de00157b083833e5ccb04f5b67f/athletic-facilities-check-in/by-day.csv",
           "version": "2023-09-04",
           "sizeInBytes": 123
@@ -306,12 +234,6 @@
           "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/athletic-facilities-check-in/by-month.csv",
           "version": "2023-09-05",
           "sizeInBytes": 221
-        },
-        {
-          "name": "by-month",
-          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/7532471d698c64add600554bdd575d5b975cf4eb/athletic-facilities-check-in/by-month.csv",
-          "version": "2023-09-05",
-          "sizeInBytes": 167
         },
         {
           "name": "by-month",
@@ -334,12 +256,6 @@
         },
         {
           "name": "daily-food-waste-3-meals",
-          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/7532471d698c64add600554bdd575d5b975cf4eb/food-waste/daily-food-waste-3-meals.csv",
-          "version": "2023-09-05",
-          "sizeInBytes": 37028
-        },
-        {
-          "name": "daily-food-waste-3-meals",
           "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/7e2719a439d45de00157b083833e5ccb04f5b67f/food-waste/daily-food-waste-3-meals.csv",
           "version": "2023-09-04",
           "sizeInBytes": 37094
@@ -356,12 +272,6 @@
           "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/student-population/raw-data.csv",
           "version": "2023-09-05",
           "sizeInBytes": 402
-        },
-        {
-          "name": "raw-data",
-          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/7532471d698c64add600554bdd575d5b975cf4eb/student-population/raw-data.csv",
-          "version": "2023-09-05",
-          "sizeInBytes": 746
         },
         {
           "name": "raw-data",
