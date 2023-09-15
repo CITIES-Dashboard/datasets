@@ -233,9 +233,9 @@ const main = async (apiKey, databaseUrl, currentCommit) => {
                     // with the same date as the current version
                     const numVersionsWithSameDate = datasetEntry.versions.filter(version => version.version === currentVersion.version).length;
                     // If there already exists a version with the same date
-                    // append a number to the version (such as v2, v3, etc.)
-                    if (numVersionsWithSameDate > 0) {
-                        currentVersion.version += ` v${numVersionsWithSameDate + 1}`;
+                    // Overwrite it with the current version
+                    if (numVersionsWithSameDate > 1) {
+                        datasetEntry.versions = datasetEntry.versions.filter(version => version.version !== currentVersion.version);
                     }
                 }
 
