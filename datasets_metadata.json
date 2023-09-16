@@ -1,0 +1,111 @@
+{
+  "air-quality": [
+    {
+      "id": "584789045",
+      "versions": [
+        {
+          "name": "daily",
+          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/air-quality/daily.csv",
+          "version": "2023-09-16",
+          "sizeInBytes": 53887
+        }
+      ]
+    },
+    {
+      "id": "19993990",
+      "versions": [
+        {
+          "name": "hourly",
+          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/air-quality/hourly.csv",
+          "version": "2023-09-16",
+          "sizeInBytes": 1391982
+        }
+      ]
+    }
+  ],
+  "athletics-fabs-membership": [
+    {
+      "id": "560722866",
+      "versions": [
+        {
+          "name": "raw-_original-11-types-of-fabs-accounts_",
+          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/athletics-fabs-membership/raw-_original-11-types-of-fabs-accounts_.csv",
+          "version": "2023-09-16",
+          "sizeInBytes": 592
+        }
+      ]
+    },
+    {
+      "id": "337720664",
+      "versions": [
+        {
+          "name": "transformed-_regrouped-to-4-demographic-groups_",
+          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/athletics-fabs-membership/transformed-_regrouped-to-4-demographic-groups_.csv",
+          "version": "2023-09-16",
+          "sizeInBytes": 300
+        }
+      ]
+    }
+  ],
+  "athletic-facilities-check-in": [
+    {
+      "id": "1993454060",
+      "versions": [
+        {
+          "name": "by-hour",
+          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/athletic-facilities-check-in/by-hour.csv",
+          "version": "2023-09-16",
+          "sizeInBytes": 261
+        }
+      ]
+    },
+    {
+      "id": "948552227",
+      "versions": [
+        {
+          "name": "by-day",
+          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/athletic-facilities-check-in/by-day.csv",
+          "version": "2023-09-16",
+          "sizeInBytes": 123
+        }
+      ]
+    },
+    {
+      "id": "30903651",
+      "versions": [
+        {
+          "name": "by-month",
+          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/athletic-facilities-check-in/by-month.csv",
+          "version": "2023-09-16",
+          "sizeInBytes": 221
+        }
+      ]
+    }
+  ],
+  "food-waste": [
+    {
+      "id": "1952244844",
+      "versions": [
+        {
+          "name": "daily-food-waste-3-meals",
+          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/food-waste/daily-food-waste-3-meals.csv",
+          "version": "2023-09-16",
+          "sizeInBytes": 37094
+        }
+      ]
+    }
+  ],
+  "student-population": [
+    {
+      "id": "1622588326",
+      "versions": [
+        {
+          "name": "raw-data",
+          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/student-population/raw-data.csv",
+          "version": "2023-09-16",
+          "sizeInBytes": 878
+        }
+      ]
+    }
+  ]
+}
