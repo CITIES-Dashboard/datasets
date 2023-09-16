@@ -77,6 +77,12 @@
         {
           "name": "hourly",
           "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/air-quality/hourly.csv",
+          "version": "2023-09-16",
+          "sizeInBytes": 1391473
+        },
+        {
+          "name": "hourly",
+          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/939821e574ceffe2f6231689f5a4015f77af26f5/air-quality/hourly.csv",
           "version": "2023-09-15",
           "sizeInBytes": 1391265
         },
