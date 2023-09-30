@@ -21864,3 +21864,27 @@ time,outdoor_PM2.5_conc_(µg/m3),outdoor_US_AQI,outdoor_category,c2_PM2.5_conc_(
 2023-09-29 01:00,46,126,Unhealthy for Sensitive Groups,14.2,55,Moderate,10.4,43,Good
 2023-09-29 02:00,43.3,120,Unhealthy for Sensitive Groups,14.1,55,Moderate,10.1,42,Good
 2023-09-29 03:00,46.8,128,Unhealthy for Sensitive Groups,13.3,53,Moderate,10.6,44,Good
+2023-09-29 04:00,48.7,133,Unhealthy for Sensitive Groups,12.6,52,Moderate,10.5,43,Good
+2023-09-29 05:00,44,121,Unhealthy for Sensitive Groups,11.4,47,Good,7,29,Good
+2023-09-29 06:00,61,153,Unhealthy,8.4,35,Good,5.8,24,Good
+2023-09-29 07:00,62.9,154,Unhealthy,6.8,28,Good,5.8,24,Good
+2023-09-29 08:00,57,151,Unhealthy,6.3,26,Good,6,25,Good
+2023-09-29 09:00,58.5,152,Unhealthy,6.7,27,Good,7.5,31,Good
+2023-09-29 10:00,62,154,Unhealthy,8.2,34,Good,11.3,47,Good
+2023-09-29 11:00,58.2,152,Unhealthy,9.9,41,Good,12.9,52,Moderate
+2023-09-29 12:00,44.5,123,Unhealthy for Sensitive Groups,11.1,46,Good,21.9,71,Moderate
+2023-09-29 13:00,44.8,123,Unhealthy for Sensitive Groups,11.8,49,Good,22.5,72,Moderate
+2023-09-29 14:00,54.9,148,Unhealthy for Sensitive Groups,12.5,51,Moderate,25.5,79,Moderate
+2023-09-29 15:00,65.9,156,Unhealthy,13.7,54,Moderate,22.5,72,Moderate
+2023-09-29 16:00,68.3,157,Unhealthy,15.4,57,Moderate,17.1,61,Moderate
+2023-09-29 17:00,70.5,158,Unhealthy,17.2,61,Moderate,18.1,63,Moderate
+2023-09-29 18:00,67.9,157,Unhealthy,18.6,64,Moderate,25.8,79,Moderate
+2023-09-29 19:00,67.7,157,Unhealthy,18.6,64,Moderate,26.7,81,Moderate
+2023-09-29 20:00,69.1,158,Unhealthy,19.2,65,Moderate,31.5,91,Moderate
+2023-09-29 21:00,66.2,156,Unhealthy,19.4,66,Moderate,27.6,83,Moderate
+2023-09-29 22:00,68.5,157,Unhealthy,19.4,66,Moderate,17.2,61,Moderate
+2023-09-29 23:00,68.1,157,Unhealthy,20.2,68,Moderate,15.2,57,Moderate
+2023-09-30 00:00,69.2,158,Unhealthy,21.6,70,Moderate,15.4,57,Moderate
+2023-09-30 01:00,72.6,159,Unhealthy,22.3,72,Moderate,15.7,58,Moderate
+2023-09-30 02:00,75.7,161,Unhealthy,22.4,72,Moderate,15,57,Moderate
+2023-09-30 03:00,76,161,Unhealthy,21.8,71,Moderate,15.1,57,Moderate
