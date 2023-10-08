@@ -150,7 +150,7 @@
           "name": "hourly",
           "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/air-quality/hourly.csv",
           "version": "2023-10-08",
-          "sizeInBytes": 1427971
+          "sizeInBytes": 1428927
         },
         {
           "name": "hourly",
@@ -294,6 +294,12 @@
         {
           "name": "raw-_original-11-types-of-fabs-accounts_",
           "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/athletics-fabs-membership/raw-_original-11-types-of-fabs-accounts_.csv",
+          "version": "2023-10-08",
+          "sizeInBytes": 592
+        },
+        {
+          "name": "raw-_original-11-types-of-fabs-accounts_",
+          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/6b7b49f5b75f75f70d8a1ca9b6f4f2d6f51f4052/athletics-fabs-membership/raw-_original-11-types-of-fabs-accounts_.csv",
           "version": "2023-09-16",
           "sizeInBytes": 592
         }
@@ -305,6 +311,12 @@
         {
           "name": "transformed-_regrouped-to-4-demographic-groups_",
           "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/athletics-fabs-membership/transformed-_regrouped-to-4-demographic-groups_.csv",
+          "version": "2023-10-08",
+          "sizeInBytes": 301
+        },
+        {
+          "name": "transformed-_regrouped-to-4-demographic-groups_",
+          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/6b7b49f5b75f75f70d8a1ca9b6f4f2d6f51f4052/athletics-fabs-membership/transformed-_regrouped-to-4-demographic-groups_.csv",
           "version": "2023-09-16",
           "sizeInBytes": 300
         }
@@ -318,6 +330,12 @@
         {
           "name": "by-hour",
           "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/athletic-facilities-check-in/by-hour.csv",
+          "version": "2023-10-08",
+          "sizeInBytes": 310
+        },
+        {
+          "name": "by-hour",
+          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/6b7b49f5b75f75f70d8a1ca9b6f4f2d6f51f4052/athletic-facilities-check-in/by-hour.csv",
           "version": "2023-09-16",
           "sizeInBytes": 261
         }
@@ -329,6 +347,12 @@
         {
           "name": "by-day",
           "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/athletic-facilities-check-in/by-day.csv",
+          "version": "2023-10-08",
+          "sizeInBytes": 156
+        },
+        {
+          "name": "by-day",
+          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/6b7b49f5b75f75f70d8a1ca9b6f4f2d6f51f4052/athletic-facilities-check-in/by-day.csv",
           "version": "2023-09-16",
           "sizeInBytes": 123
         }
@@ -340,6 +364,12 @@
         {
           "name": "by-month",
           "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/athletic-facilities-check-in/by-month.csv",
+          "version": "2023-10-08",
+          "sizeInBytes": 266
+        },
+        {
+          "name": "by-month",
+          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/6b7b49f5b75f75f70d8a1ca9b6f4f2d6f51f4052/athletic-facilities-check-in/by-month.csv",
           "version": "2023-09-16",
           "sizeInBytes": 221
         }
