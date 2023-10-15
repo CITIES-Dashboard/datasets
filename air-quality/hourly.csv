@@ -22224,3 +22224,27 @@ time,outdoor_PM2.5_conc_(µg/m3),outdoor_US_AQI,outdoor_category,c2_PM2.5_conc_(
 2023-10-14 01:00,39.7,111,Unhealthy for Sensitive Groups,17.4,62,Moderate,6.1,25,Good
 2023-10-14 02:00,42.3,117,Unhealthy for Sensitive Groups,17.5,62,Moderate,5.5,22,Good
 2023-10-14 03:00,46.6,128,Unhealthy for Sensitive Groups,17.1,61,Moderate,5.6,23,Good
+2023-10-14 04:00,51.2,139,Unhealthy for Sensitive Groups,17,61,Moderate,5.2,21,Good
+2023-10-14 05:00,52.3,142,Unhealthy for Sensitive Groups,16.9,61,Moderate,5,20,Good
+2023-10-14 06:00,50.6,138,Unhealthy for Sensitive Groups,14,54,Moderate,5.4,22,Good
+2023-10-14 07:00,58,152,Unhealthy,11.7,48,Good,7.7,32,Good
+2023-10-14 08:00,60.7,153,Unhealthy,12.1,51,Moderate,9.1,37,Good
+2023-10-14 09:00,58.2,152,Unhealthy,12.9,52,Moderate,9.4,39,Good
+2023-10-14 10:00,58,152,Unhealthy,14.1,55,Moderate,8.9,37,Good
+2023-10-14 11:00,57.8,152,Unhealthy,14.6,56,Moderate,12,50,Good
+2023-10-14 12:00,61.9,154,Unhealthy,15.8,58,Moderate,21.6,70,Moderate
+2023-10-14 13:00,58,152,Unhealthy,17.1,61,Moderate,21,69,Moderate
+2023-10-14 14:00,62.6,154,Unhealthy,16.7,60,Moderate,23.9,75,Moderate
+2023-10-14 15:00,52.8,143,Unhealthy for Sensitive Groups,17.2,61,Moderate,13.9,54,Moderate
+2023-10-14 16:00,48.2,132,Unhealthy for Sensitive Groups,16.6,60,Moderate,9,37,Good
+2023-10-14 17:00,49,134,Unhealthy for Sensitive Groups,16.3,59,Moderate,16.7,60,Moderate
+2023-10-14 18:00,54,146,Unhealthy for Sensitive Groups,15.6,58,Moderate,26.4,81,Moderate
+2023-10-14 19:00,59.7,153,Unhealthy,16.8,60,Moderate,32.8,94,Moderate
+2023-10-14 20:00,60.8,153,Unhealthy,18.9,65,Moderate,43.9,121,Unhealthy for Sensitive Groups
+2023-10-14 21:00,62.2,154,Unhealthy,20.1,67,Moderate,25.4,78,Moderate
+2023-10-14 22:00,64.3,155,Unhealthy,21.4,70,Moderate,17,61,Moderate
+2023-10-14 23:00,66.4,156,Unhealthy,23.8,75,Moderate,15,57,Moderate
+2023-10-15 00:00,74.1,160,Unhealthy,26.7,81,Moderate,12.2,51,Moderate
+2023-10-15 01:00,65.1,155,Unhealthy,27.5,83,Moderate,12.5,51,Moderate
+2023-10-15 02:00,71.8,159,Unhealthy,26.4,81,Moderate,12,50,Good
+2023-10-15 03:00,66.5,156,Unhealthy,26.5,81,Moderate,11.2,46,Good
