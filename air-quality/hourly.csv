@@ -22656,3 +22656,27 @@ time,outdoor_PM2.5_conc_(µg/m3),outdoor_US_AQI,outdoor_category,c2_PM2.5_conc_(
 2023-11-01 01:00,29.6,87,Moderate,8.3,34,Good,8.1,33,Good
 2023-11-01 02:00,28.5,85,Moderate,8.5,35,Good,8.1,33,Good
 2023-11-01 03:00,28.5,85,Moderate,8.9,37,Good,8.3,34,Good
+2023-11-01 04:00,30.2,89,Moderate,9.1,37,Good,8.4,35,Good
+2023-11-01 05:00,32.2,93,Moderate,9.4,39,Good,8.9,37,Good
+2023-11-01 06:00,32.8,94,Moderate,7.5,31,Good,8.3,34,Good
+2023-11-01 07:00,33.3,95,Moderate,6.5,27,Good,10.2,42,Good
+2023-11-01 08:00,38.9,109,Unhealthy for Sensitive Groups,6,25,Good,17.7,62,Moderate
+2023-11-01 09:00,25.7,79,Moderate,6.4,26,Good,19.4,66,Moderate
+2023-11-01 10:00,28.8,86,Moderate,7.2,30,Good,15.5,58,Moderate
+2023-11-01 11:00,,,No Data,6.6,27,Good,16.8,60,Moderate
+2023-11-01 12:00,30.2,89,Moderate,6.5,27,Good,20.5,68,Moderate
+2023-11-01 13:00,29.9,88,Moderate,7.1,29,Good,21,69,Moderate
+2023-11-01 14:00,28.2,84,Moderate,7.8,32,Good,21.6,70,Moderate
+2023-11-01 15:00,28.1,84,Moderate,7.6,31,Good,11.9,49,Good
+2023-11-01 16:00,24.2,76,Moderate,7,29,Good,8,33,Good
+2023-11-01 17:00,21.1,69,Moderate,6.6,27,Good,7.8,32,Good
+2023-11-01 18:00,20.8,69,Moderate,6.2,25,Good,13.7,54,Moderate
+2023-11-01 19:00,24.8,77,Moderate,6.8,28,Good,22,71,Moderate
+2023-11-01 20:00,33.4,95,Moderate,8,33,Good,25.2,78,Moderate
+2023-11-01 21:00,32.1,93,Moderate,7.6,31,Good,13.8,54,Moderate
+2023-11-01 22:00,26.6,81,Moderate,7.3,30,Good,8.9,37,Good
+2023-11-01 23:00,23.3,74,Moderate,7.2,30,Good,8.3,34,Good
+2023-11-02 00:00,20.2,68,Moderate,6.8,28,Good,6.9,28,Good
+2023-11-02 01:00,22.4,72,Moderate,6.4,26,Good,5.7,23,Good
+2023-11-02 02:00,24.2,76,Moderate,6.6,27,Good,5.7,23,Good
+2023-11-02 03:00,24.6,77,Moderate,6.9,28,Good,6.2,25,Good
