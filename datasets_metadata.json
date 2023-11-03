@@ -6,6 +6,12 @@
         {
           "name": "daily",
           "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/air-quality/daily.csv",
+          "version": "2023-11-03",
+          "sizeInBytes": 57072
+        },
+        {
+          "name": "daily",
+          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/46b3d5cc0a8ed93fbffe1bbcd9c06405073a67c5/air-quality/daily.csv",
           "version": "2023-11-02",
           "sizeInBytes": 56994
         },
@@ -299,6 +305,12 @@
         {
           "name": "hourly",
           "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/air-quality/hourly.csv",
+          "version": "2023-11-03",
+          "sizeInBytes": 1472696
+        },
+        {
+          "name": "hourly",
+          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/46b3d5cc0a8ed93fbffe1bbcd9c06405073a67c5/air-quality/hourly.csv",
           "version": "2023-11-02",
           "sizeInBytes": 1470855
         },
