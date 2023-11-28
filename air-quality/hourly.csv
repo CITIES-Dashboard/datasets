@@ -23280,3 +23280,27 @@ time,outdoor_PM2.5_conc_(µg/m3),outdoor_US_AQI,outdoor_category,c2_PM2.5_conc_(
 2023-11-27 01:00,21.8,71,Moderate,7.9,32,Good,12.3,51,Moderate
 2023-11-27 02:00,23.1,74,Moderate,8,33,Good,8.8,36,Good
 2023-11-27 03:00,25.4,78,Moderate,7.7,32,Good,8.6,35,Good
+2023-11-27 04:00,26.8,81,Moderate,8,33,Good,9.4,39,Good
+2023-11-27 05:00,40.9,114,Unhealthy for Sensitive Groups,8.2,34,Good,11.5,47,Good
+2023-11-27 06:00,42.8,118,Unhealthy for Sensitive Groups,7.8,32,Good,12.2,51,Moderate
+2023-11-27 07:00,36,102,Unhealthy for Sensitive Groups,6.4,26,Good,11,45,Good
+2023-11-27 08:00,28.6,85,Moderate,5.3,22,Good,20.7,69,Moderate
+2023-11-27 09:00,34.3,97,Moderate,4.7,19,Good,22.5,72,Moderate
+2023-11-27 10:00,30.6,89,Moderate,7,29,Good,19.2,65,Moderate
+2023-11-27 11:00,29,86,Moderate,6.9,28,Good,38.5,108,Unhealthy for Sensitive Groups
+2023-11-27 12:00,29.5,87,Moderate,7.3,30,Good,47.2,129,Unhealthy for Sensitive Groups
+2023-11-27 13:00,22,71,Moderate,8.7,36,Good,49,134,Unhealthy for Sensitive Groups
+2023-11-27 14:00,25.4,78,Moderate,8.4,35,Good,28.8,86,Moderate
+2023-11-27 15:00,24.7,77,Moderate,9.3,38,Good,20.9,69,Moderate
+2023-11-27 16:00,25.1,78,Moderate,8,33,Good,14.2,55,Moderate
+2023-11-27 17:00,23.5,74,Moderate,7.1,29,Good,27.1,82,Moderate
+2023-11-27 18:00,24.8,77,Moderate,7.1,29,Good,34.6,98,Moderate
+2023-11-27 19:00,28.3,85,Moderate,7.3,30,Good,49.5,135,Unhealthy for Sensitive Groups
+2023-11-27 20:00,28.7,85,Moderate,8.2,34,Good,50.5,137,Unhealthy for Sensitive Groups
+2023-11-27 21:00,29,86,Moderate,8.7,36,Good,63,154,Unhealthy
+2023-11-27 22:00,28.8,86,Moderate,8.6,35,Good,46.8,128,Unhealthy for Sensitive Groups
+2023-11-27 23:00,27.7,83,Moderate,9.4,39,Good,23,73,Moderate
+2023-11-28 00:00,33.9,96,Moderate,9.8,40,Good,18,63,Moderate
+2023-11-28 01:00,40,112,Unhealthy for Sensitive Groups,10.3,42,Good,13.6,54,Moderate
+2023-11-28 02:00,38.9,109,Unhealthy for Sensitive Groups,10,41,Good,12,50,Good
+2023-11-28 03:00,41.8,116,Unhealthy for Sensitive Groups,10.4,43,Good,11.4,47,Good
