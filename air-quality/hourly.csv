@@ -23376,3 +23376,27 @@ time,outdoor_PM2.5_conc_(µg/m3),outdoor_US_AQI,outdoor_category,c2_PM2.5_conc_(
 2023-12-01 01:00,29.1,86,Moderate,8.5,35,Good,13,52,Moderate
 2023-12-01 02:00,35.9,101,Unhealthy for Sensitive Groups,8.4,35,Good,10.9,45,Good
 2023-12-01 03:00,31,90,Moderate,8.5,35,Good,11.5,47,Good
+2023-12-01 04:00,25.3,78,Moderate,8.8,36,Good,10.2,42,Good
+2023-12-01 05:00,22,71,Moderate,8.2,34,Good,7.7,32,Good
+2023-12-01 06:00,23.5,74,Moderate,6.4,26,Good,7.6,31,Good
+2023-12-01 07:00,48.6,133,Unhealthy for Sensitive Groups,5.4,22,Good,13.7,54,Moderate
+2023-12-01 08:00,63.2,154,Unhealthy,5.7,23,Good,32.8,94,Moderate
+2023-12-01 09:00,54.5,147,Unhealthy for Sensitive Groups,6.2,25,Good,23.1,74,Moderate
+2023-12-01 10:00,43,119,Unhealthy for Sensitive Groups,6.3,26,Good,24.4,76,Moderate
+2023-12-01 11:00,38.5,108,Unhealthy for Sensitive Groups,6.1,25,Good,19.5,66,Moderate
+2023-12-01 12:00,37.5,105,Unhealthy for Sensitive Groups,7.1,29,Good,29.7,88,Moderate
+2023-12-01 13:00,39.7,111,Unhealthy for Sensitive Groups,8.9,37,Good,31.9,92,Moderate
+2023-12-01 14:00,39.6,111,Unhealthy for Sensitive Groups,10.5,43,Good,48.3,132,Unhealthy for Sensitive Groups
+2023-12-01 15:00,41.1,114,Unhealthy for Sensitive Groups,11.4,47,Good,32.8,94,Moderate
+2023-12-01 16:00,42.6,118,Unhealthy for Sensitive Groups,11.6,48,Good,23.7,75,Moderate
+2023-12-01 17:00,39.6,111,Unhealthy for Sensitive Groups,11.8,49,Good,26.6,81,Moderate
+2023-12-01 18:00,41.4,115,Unhealthy for Sensitive Groups,11.7,48,Good,45.3,125,Unhealthy for Sensitive Groups
+2023-12-01 19:00,41.3,115,Unhealthy for Sensitive Groups,12.5,51,Moderate,51,139,Unhealthy for Sensitive Groups
+2023-12-01 20:00,47.8,131,Unhealthy for Sensitive Groups,13.4,53,Moderate,57.2,151,Unhealthy
+2023-12-01 21:00,48.6,133,Unhealthy for Sensitive Groups,13.5,53,Moderate,43.2,119,Unhealthy for Sensitive Groups
+2023-12-01 22:00,43.6,120,Unhealthy for Sensitive Groups,14,54,Moderate,34.7,98,Moderate
+2023-12-01 23:00,53.1,144,Unhealthy for Sensitive Groups,16,59,Moderate,26.7,81,Moderate
+2023-12-02 00:00,49.8,136,Unhealthy for Sensitive Groups,17.8,62,Moderate,23.7,75,Moderate
+2023-12-02 01:00,52,141,Unhealthy for Sensitive Groups,19.4,66,Moderate,21.5,70,Moderate
+2023-12-02 02:00,61.3,153,Unhealthy,19.7,66,Moderate,21.3,70,Moderate
+2023-12-02 03:00,68.5,157,Unhealthy,19.9,67,Moderate,26.5,81,Moderate
