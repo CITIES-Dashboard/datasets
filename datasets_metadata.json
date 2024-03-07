@@ -1156,14 +1156,8 @@
       "id": "1993454060",
       "versions": [
         {
-          "name": "data",
-          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/athletic-facilities-check-in/athletic-facilities-check-in-data.csv",
-          "version": "2024-01-26",
-          "sizeInBytes": 0
-        },
-        {
           "name": "by-hour",
-          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/bea4a334e397f0b5fa876060e1ead6f1787679cd/athletic-facilities-check-in/by-hour.csv",
+          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/athletic-facilities-check-in/by-hour.csv",
           "version": "2023-10-08",
           "sizeInBytes": 310
         },
@@ -1179,14 +1173,8 @@
       "id": "948552227",
       "versions": [
         {
-          "name": "data",
-          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/athletic-facilities-check-in/athletic-facilities-check-in-data.csv",
-          "version": "2024-01-26",
-          "sizeInBytes": 0
-        },
-        {
           "name": "by-day",
-          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/bea4a334e397f0b5fa876060e1ead6f1787679cd/athletic-facilities-check-in/by-day.csv",
+          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/athletic-facilities-check-in/by-day.csv",
           "version": "2023-10-08",
           "sizeInBytes": 156
         },
@@ -1202,14 +1190,8 @@
       "id": "30903651",
       "versions": [
         {
-          "name": "data",
-          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/athletic-facilities-check-in/athletic-facilities-check-in-data.csv",
-          "version": "2024-01-26",
-          "sizeInBytes": 0
-        },
-        {
           "name": "by-month",
-          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/bea4a334e397f0b5fa876060e1ead6f1787679cd/athletic-facilities-check-in/by-month.csv",
+          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/athletic-facilities-check-in/by-month.csv",
           "version": "2023-10-08",
           "sizeInBytes": 266
         },
