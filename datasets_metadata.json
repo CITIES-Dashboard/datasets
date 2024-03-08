@@ -1211,6 +1211,12 @@
         {
           "name": "daily-food-waste-3-meals",
           "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/food-waste/daily-food-waste-3-meals.csv",
+          "version": "2024-03-08",
+          "sizeInBytes": 44399
+        },
+        {
+          "name": "daily-food-waste-3-meals",
+          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/80720b884fc53ad84da9f76125b986c21191210c/food-waste/daily-food-waste-3-meals.csv",
           "version": "2024-01-19",
           "sizeInBytes": 43114
         },
@@ -1262,6 +1268,19 @@
           "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/athletics-fabs-membership/transformed-_regrouped-to-4-demographic-groups_.csv",
           "version": "2023-10-12",
           "sizeInBytes": 301
+        }
+      ]
+    }
+  ],
+  "printing-and-copying": [
+    {
+      "id": "1304606517",
+      "versions": [
+        {
+          "name": "raw-data",
+          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/printing-and-copying/raw-data.csv",
+          "version": "2024-03-08",
+          "sizeInBytes": 4000445
         }
       ]
     }
