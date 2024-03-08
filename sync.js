@@ -182,6 +182,8 @@ const main = async (apiKey, databaseUrl, currentCommit) => {
                 }
             }
 
+            console.log('Sheet Name:', sheetName);
+
             let fileName;
             let sanitizedSheetName = "data"; // default
             if (sheetName) {
@@ -190,6 +192,8 @@ const main = async (apiKey, databaseUrl, currentCommit) => {
             } else {
                 fileName = `${project.id}-data.csv`;
             }
+
+            console.log('File Name:', fileName);
 
             const filePath = `${projectPath}/${fileName}`;
             if (existingCsvFile && existingCsvFile !== filePath) {
