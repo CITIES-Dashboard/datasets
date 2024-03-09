@@ -3,6 +3,16 @@ const fs = require('fs');
 const { fetchDataFromGithub, fetchDataFromGoogleSheet } = require('./datafetch');
 const { arrayToCSV, computeHash, getCSVFileSize } = require('./utils');
 
+/**
+ * Asynchronously fetches temp_database.json from the CITIES-Dashboard/cities-dashboard.github.io repository
+ * Fetches the datasets from the Google Sheets specified in the database
+ * and updates local CSV files and metadata if any changes are detected.
+ * 
+ * @param {string} apiKey - The API key for accessing the Google Sheets API.
+ * @param {string} databaseUrl - The URL to fetch the database configuration from GitHub.
+ * @param {string} currentCommit - The current commit hash used to version the datasets.
+ * @returns {Promise<void>} Nothing is returned, but CSV files may be created or updated, and `datasets_metadata.json` is updated.
+ */
 const main = async (apiKey, databaseUrl, currentCommit) => {
     try {
         const database = await fetchDataFromGithub(databaseUrl);

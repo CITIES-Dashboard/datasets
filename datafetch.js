@@ -3,6 +3,12 @@ const { google } = require('googleapis');
 
 const { isValidSheetName, sanitizeData } = require('./utils');
 
+/**
+ * Fetches data from a specified GitHub URL.
+ * @async
+ * @param {string} url - The URL to fetch data from.
+ * @returns {Promise<any>} A promise that resolves to the fetched data, or an empty array in case of an error.
+ */
 const fetchDataFromGithub = async (url) => {
     try {
         const response = await axios.get(url);
@@ -13,6 +19,14 @@ const fetchDataFromGithub = async (url) => {
     }
 };
 
+/**
+ * Retrieves the name of a Google Sheet by its sheet ID and GID, using a specified API key.
+ * @async
+ * @param {string} sheetId - The ID of the Google Sheet.
+ * @param {number} gid - The GID of the specific sheet within the Google Sheets file.
+ * @param {string} apiKey - The API key used for accessing Google Sheets API.
+ * @returns {Promise<string|null>} A promise that resolves to the sheet name, or null if the sheet is not found or the name is invalid.
+ */
 const getSheetNameByGid = async (sheetId, gid, apiKey) => {
     try {
         const sheets = google.sheets({ version: 'v4' });
@@ -42,6 +56,16 @@ const getSheetNameByGid = async (sheetId, gid, apiKey) => {
     }
 };
 
+/**
+ * Fetches data from a Google Sheet based on the sheet ID, GID, API key, and an optional query.
+ * @async
+ * @param {string} sheetId - The ID of the Google Sheet.
+ * @param {number} gid - The GID of the specific sheet within the Google Sheets file.
+ * @param {string} apiKey - The API key used for accessing the Google Sheets API.
+ * @param {string} [query] - The query string to filter or manipulate the fetched data.
+ * @param {number} [headers=1] - Indicates whether the first row contains headers (1) or not (0).
+ * @returns {Promise<{sheetName: string|null, data: Array<Array<any>>}>} A promise that resolves to an object containing the sheet name and the fetched data array. Returns null for the sheet name and an empty array for the data if any error occurs.
+ */
 const fetchDataFromGoogleSheet = async (sheetId, gid, apiKey, query, headers) => {
     const sheetName = await getSheetNameByGid(sheetId, gid, apiKey);
     if (!sheetName) {
