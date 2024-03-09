@@ -13,17 +13,36 @@ const fetchDataFromGithub = async (url) => {
     }
 };
 
+const isValidSheetName = (sheetName) => {
+    if (typeof sheetName !== 'string' || sheetName.trim() === '' || sheetName.length > 100) {
+        return false;
+    }
+    return !/[*?:/\\[\]']/.test(sheetName);
+};
+
 const getSheetNameByGid = async (sheetId, gid, apiKey) => {
     try {
-        const sheets = google.sheets({ version: 'v4' });
+        const sheets = google.sheets({version: 'v4'});
         const response = await sheets.spreadsheets.get({
             key: apiKey,
             spreadsheetId: sheetId,
             fields: 'sheets(properties(sheetId,title))',
         });
 
-        const sheet = response.data.sheets.find(sheet => sheet.properties.sheetId === parseInt(gid));
-        return sheet ? sheet.properties.title : null;
+        const sheet = response.data.sheets.find(sheet => sheet.properties.sheetId === parseInt(gid, 10));
+        if (!sheet) {
+            console.error(`Sheet with GID ${gid} not found in spreadsheet ${sheetId}`);
+            return null;
+        }
+
+        const sheetName = sheet.properties.title;
+        if (!isValidSheetName(sheetName)) {
+            console.error(`Sheet name "${sheetName}" for GID ${gid} is invalid`);
+            return null;
+        }
+
+        return sheetName;
+
     } catch (error) {
         console.error(`Error retrieving sheet name for GID ${gid}: ${error.message}`);
         return null;
