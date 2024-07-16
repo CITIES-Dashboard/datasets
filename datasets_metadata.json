@@ -1321,6 +1321,12 @@
         {
           "name": "raw-data",
           "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/printing-and-copying/raw-data.csv",
+          "version": "2024-07-16",
+          "sizeInBytes": 6891998
+        },
+        {
+          "name": "raw-data",
+          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/afcf2739d37a5fd685901f0547d506534f82c247/printing-and-copying/raw-data.csv",
           "version": "2024-07-03",
           "sizeInBytes": 5344234
         },
