@@ -128,6 +128,6 @@ const main = async (apiKey, databaseUrl, currentCommit) => {
 };
 
 const SHEETS_API_KEY = process.env.SHEETS_NEW_API_KEY;
-const TEMP_DATABASE_URL = 'https://raw.githubusercontent.com/CITIES-Dashboard/cities-dashboard.github.io/main/frontend/src/temp_database.json';
+const TEMP_DATABASE_URL = 'https://raw.githubusercontent.com/CITIES-Dashboard/citiesdashboard.com/refs/heads/main/src/temp_database.json';
 const CURRENT_COMMIT_HASH = process.env.CURRENT_COMMIT;
 main(SHEETS_API_KEY, TEMP_DATABASE_URL, CURRENT_COMMIT_HASH).catch(console.error);
