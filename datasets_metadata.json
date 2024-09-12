@@ -77,6 +77,12 @@
         {
           "name": "daily-food-waste-3-meals",
           "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/food-waste/daily-food-waste-3-meals.csv",
+          "version": "2024-09-12",
+          "sizeInBytes": 52943
+        },
+        {
+          "name": "daily-food-waste-3-meals",
+          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/05a8219460fe8d0285936f379a3d91ad33d00c85/food-waste/daily-food-waste-3-meals.csv",
           "version": "2024-05-07",
           "sizeInBytes": 48157
         },
@@ -120,6 +126,12 @@
         {
           "name": "raw-_original-11-types-of-fabs-accounts_",
           "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/athletics-fabs-membership/raw-_original-11-types-of-fabs-accounts_.csv",
+          "version": "2024-09-12",
+          "sizeInBytes": 614
+        },
+        {
+          "name": "raw-_original-11-types-of-fabs-accounts_",
+          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/05a8219460fe8d0285936f379a3d91ad33d00c85/athletics-fabs-membership/raw-_original-11-types-of-fabs-accounts_.csv",
           "version": "2024-04-15",
           "sizeInBytes": 610
         },
@@ -137,6 +149,12 @@
         {
           "name": "transformed-_regrouped-to-4-demographic-groups_",
           "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/athletics-fabs-membership/transformed-_regrouped-to-4-demographic-groups_.csv",
+          "version": "2024-09-12",
+          "sizeInBytes": 304
+        },
+        {
+          "name": "transformed-_regrouped-to-4-demographic-groups_",
+          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/05a8219460fe8d0285936f379a3d91ad33d00c85/athletics-fabs-membership/transformed-_regrouped-to-4-demographic-groups_.csv",
           "version": "2024-04-15",
           "sizeInBytes": 300
         },
@@ -156,6 +174,12 @@
         {
           "name": "raw-data",
           "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/printing-and-copying/raw-data.csv",
+          "version": "2024-09-12",
+          "sizeInBytes": 6286163
+        },
+        {
+          "name": "raw-data",
+          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/05a8219460fe8d0285936f379a3d91ad33d00c85/printing-and-copying/raw-data.csv",
           "version": "2024-07-16",
           "sizeInBytes": 6891998
         },
