@@ -77,6 +77,12 @@
         {
           "name": "daily-food-waste-3-meals",
           "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/food-waste/daily-food-waste-3-meals.csv",
+          "version": "2024-10-03",
+          "sizeInBytes": 54189
+        },
+        {
+          "name": "daily-food-waste-3-meals",
+          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/80b81e7eb6ccc1e5404c95b79ce7509c65c39c35/food-waste/daily-food-waste-3-meals.csv",
           "version": "2024-09-12",
           "sizeInBytes": 52943
         },
@@ -174,6 +180,12 @@
         {
           "name": "raw-data",
           "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/printing-and-copying/raw-data.csv",
+          "version": "2024-10-03",
+          "sizeInBytes": 6590375
+        },
+        {
+          "name": "raw-data",
+          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/80b81e7eb6ccc1e5404c95b79ce7509c65c39c35/printing-and-copying/raw-data.csv",
           "version": "2024-09-12",
           "sizeInBytes": 6286163
         },
