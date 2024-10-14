@@ -239,5 +239,18 @@
         }
       ]
     }
+  ],
+  "printing": [
+    {
+      "id": "1304606517",
+      "versions": [
+        {
+          "name": "raw-data",
+          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/printing/raw-data.csv",
+          "version": "2024-10-14",
+          "sizeInBytes": 6590360
+        }
+      ]
+    }
   ]
 }
