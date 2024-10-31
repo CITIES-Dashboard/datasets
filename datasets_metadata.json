@@ -172,5 +172,29 @@
         }
       ]
     }
+  ],
+  "printing": [
+    {
+      "id": "1304606517",
+      "versions": [
+        {
+          "name": "raw-monthly",
+          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/printing/raw-monthly.csv",
+          "version": "2024-10-31",
+          "sizeInBytes": 6590360
+        }
+      ]
+    },
+    {
+      "id": "1821457990",
+      "versions": [
+        {
+          "name": "raw-soft-cap-periods-_6m_",
+          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/printing/raw-soft-cap-periods-_6m_.csv",
+          "version": "2024-10-31",
+          "sizeInBytes": 1782979
+        }
+      ]
+    }
   ]
 }
