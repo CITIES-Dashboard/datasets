@@ -1,38 +1,53 @@
 name: Sync Datasets
+
 on:
   schedule:
-    - cron: "0 0 * * *" # Run every day at 12:00 AM UTC
-  workflow_dispatch:
+    - cron: "0 0 * * *" # This triggers the workflow daily at 12:00 AM UTC using cron syntax
+  workflow_dispatch: # Allows the workflow to be triggered manually from the GitHub UI
 
 jobs:
   sync_data:
     runs-on: ubuntu-latest
 
     steps:
+      # Step 1: Check out the latest code from the repository
       - name: Checkout Repo
         uses: actions/checkout@v2
 
+      # Step 2: Install and configure the specified Node.js version
       - name: Setup Node.js
         uses: actions/setup-node@v1
         with:
           node-version: 18
 
+      # Step 3: Install required npm dependencies needed by sync.js
       - name: Install Dependencies
         run: |
-          npm install axios
-          npm install googleapis
+          npm install axios # Used in sync.js for making REST API calls
+          npm install googleapis # Google Sheets API client to read data from Google Sheets
 
+      # Step 4: Execute the sync script that performs the actual dataset sync logic
       - name: Run Sync Script
         run: node sync.js
         env:
-          SHEETS_NEW_API_KEY: ${{ secrets.SHEETS_NEW_API_KEY }}
-          CURRENT_COMMIT: ${{ github.sha }} # This provides the current commit hash
+          SHEETS_NEW_API_KEY: ${{ secrets.SHEETS_NEW_API_KEY }} 
+          CURRENT_COMMIT: ${{ github.sha }}
 
+      # Step 5: If sync.js causes file modifications, commit and push them back to the repository
       - name: Commit and Push if changes
         run: |
+          # Configure Git user identity for commits made by the GitHub Actions runner
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
+
+          # Stage all new/changed/deleted files
           git add -A
+
+          # Compose a commit message using current UTC date
           commit_message="Updated on $(date +'%Y-%m-%d')"
+
+          # Only commit if there are changes (working directory or index isn't clean)
           git diff --quiet && git diff --staged --quiet || git commit -m "$commit_message"
+
+          # Push the commit to the same branch this workflow runs on
           git push
