@@ -287,6 +287,12 @@
         {
           "name": "raw-soft-cap-periods-_6m_",
           "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/printing/raw-soft-cap-periods-_6m_.csv",
+          "version": "2025-09-04",
+          "sizeInBytes": 2847775
+        },
+        {
+          "name": "raw-soft-cap-periods-_6m_",
+          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/e8f3f8fe44729cf5663dd53024b7050eea368e55/printing/raw-soft-cap-periods-_6m_.csv",
           "version": "2025-03-04",
           "sizeInBytes": 2355916
         },
