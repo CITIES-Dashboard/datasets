@@ -7,10 +7,7 @@ const fs = require('fs');
  * @returns {boolean} true if the sheet name is valid, false otherwise
  */
 const isValidSheetName = (sheetName) => {
-    if (typeof sheetName !== 'string' || sheetName.trim() === '' || sheetName.length > 100) {
-        return false;
-    }
-    return !/[*?:/\\[\]']/.test(sheetName);
+    return typeof sheetName === 'string' && sheetName.trim() !== '' && sheetName.length <= 100;
 };
 
 /**

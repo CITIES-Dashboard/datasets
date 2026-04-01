@@ -1,20 +1,52 @@
 const fs = require('fs');
+const { google } = require('googleapis');
 
 const { fetchDataFromGithub, fetchDataFromGoogleSheet } = require('./datafetch');
 const { arrayToCSV, computeHash, getCSVFileSize } = require('./utils');
+
+/**
+ * Creates an authenticated Google Sheets API client using a service account JSON key.
+ * @param {string} serviceAccountJson - The JSON string of the service account credentials.
+ * @returns {object} An authenticated Google Sheets API client instance.
+ * @throws {Error} If the JSON is missing or invalid.
+ */
+const createSheetsClient = (serviceAccountJson) => {
+    if (!serviceAccountJson) {
+        throw new Error('Missing GOOGLE_SERVICE_ACCOUNT_KEY');
+    }
+
+    let credentials;
+    try {
+        credentials = JSON.parse(serviceAccountJson);
+    } catch {
+        throw new Error('GOOGLE_SERVICE_ACCOUNT_KEY is not valid JSON');
+    }
+
+    const auth = new google.auth.GoogleAuth({
+        credentials,
+        scopes: ['https://www.googleapis.com/auth/spreadsheets.readonly'],
+    });
+
+    return google.sheets({
+        version: 'v4',
+        auth,
+    });
+};
 
 /**
  * Asynchronously fetches temp_database.json from the CITIES-Dashboard/cities-dashboard.github.io repository
  * Fetches the datasets from the Google Sheets specified in the database
  * and updates local CSV files and metadata if any changes are detected.
  * 
- * @param {string} apiKey - The API key for accessing the Google Sheets API.
+ * @param {string} serviceAccountJson - The service account JSON key for accessing the Google Sheets API.
  * @param {string} databaseUrl - The URL to fetch the database configuration from GitHub.
  * @param {string} currentCommit - The current commit hash used to version the datasets.
  * @returns {Promise<void>} Nothing is returned, but CSV files may be created or updated, and `datasets_metadata.json` is updated.
  */
-const main = async (apiKey, databaseUrl, currentCommit) => {
+const main = async (serviceAccountJson, databaseUrl, currentCommit) => {
     try {
+        const sheets = createSheetsClient(serviceAccountJson);
+
         const database = await fetchDataFromGithub(databaseUrl);
         let metadata = {};
 
@@ -38,8 +70,8 @@ const main = async (apiKey, databaseUrl, currentCommit) => {
             for (const dataset of project.rawDataTables) {
                 const gid = dataset.gid;
                 const query = dataset.query || null;
-                const headers = dataset.headers || 1; // default headers is 1
-                const { sheetName, data } = await fetchDataFromGoogleSheet(project.sheetId, gid, apiKey, query, headers);
+                const headers = dataset.headers ?? 1; // default headers is 1
+                const { sheetName, data } = await fetchDataFromGoogleSheet(sheets, project.sheetId, gid, query, headers);
 
                 if (!sheetName || data.length === 0) {
                     throw new Error(`Invalid sheet name or empty data for GID ${gid} in project ${project.id}`);
@@ -127,7 +159,8 @@ const main = async (apiKey, databaseUrl, currentCommit) => {
     }
 };
 
-const SHEETS_API_KEY = process.env.SHEETS_API_KEY;
-const TEMP_DATABASE_URL = 'https://raw.githubusercontent.com/CITIES-Dashboard/citiesdashboard.com/refs/heads/main/src/temp_database.json';
-const CURRENT_COMMIT_HASH = process.env.CURRENT_COMMIT;
-main(SHEETS_API_KEY, TEMP_DATABASE_URL, CURRENT_COMMIT_HASH).catch(console.error);
+main(
+    process.env.GOOGLE_SERVICE_ACCOUNT_KEY,
+    'https://raw.githubusercontent.com/CITIES-Dashboard/citiesdashboard.com/refs/heads/main/src/temp_database.json',
+    process.env.CURRENT_COMMIT
+).catch(console.error);

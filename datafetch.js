@@ -1,6 +1,4 @@
 const axios = require('axios');
-const { google } = require('googleapis');
-
 const { isValidSheetName, sanitizeData } = require('./utils');
 
 /**
@@ -14,29 +12,32 @@ const fetchDataFromGithub = async (url) => {
         const response = await axios.get(url);
         return response.data;
     } catch (error) {
-        console.error(`GitHub Data Fetch Error: ${error.response.statusText}`);
+        console.error(`GitHub Data Fetch Error: ${error.response?.statusText || error.message}`);
         return [];
     }
 };
 
 /**
- * Retrieves the name of a Google Sheet by its sheet ID and GID, using a specified API key.
+ * Retrieves the name of a Google Sheet by its sheet ID and GID using an
+ * authenticated Google Sheets API client (service account).
  * @async
+ * @param {object} sheets - An authenticated Google Sheets API client instance.
  * @param {string} sheetId - The ID of the Google Sheet.
- * @param {number} gid - The GID of the specific sheet within the Google Sheets file.
- * @param {string} apiKey - The API key used for accessing Google Sheets API.
- * @returns {Promise<string|null>} A promise that resolves to the sheet name, or null if the sheet is not found or the name is invalid.
+ * @param {number} gid - The GID of the specific sheet within the spreadsheet.
+ * @returns {Promise<string|null>} A promise that resolves to the sheet name,
+ * or null if the sheet is not found or the name is invalid.
  */
-const getSheetNameByGid = async (sheetId, gid, apiKey) => {
+const getSheetNameByGid = async (sheets, sheetId, gid) => {
     try {
-        const sheets = google.sheets({ version: 'v4' });
         const response = await sheets.spreadsheets.get({
-            key: apiKey,
             spreadsheetId: sheetId,
             fields: 'sheets(properties(sheetId,title))',
         });
 
-        const sheet = response.data.sheets.find(sheet => sheet.properties.sheetId === parseInt(gid, 10));
+        const sheet = response.data.sheets.find(
+            sheet => sheet.properties.sheetId === parseInt(gid, 10)
+        );
+
         if (!sheet) {
             console.error(`Sheet with GID ${gid} not found in spreadsheet ${sheetId}`);
             return null;
@@ -49,7 +50,6 @@ const getSheetNameByGid = async (sheetId, gid, apiKey) => {
         }
 
         return sheetName;
-
     } catch (error) {
         console.error(`Error retrieving sheet name for GID ${gid}: ${error.message}`);
         return null;
@@ -57,24 +57,27 @@ const getSheetNameByGid = async (sheetId, gid, apiKey) => {
 };
 
 /**
- * Fetches data from a Google Sheet based on the sheet ID, GID, API key, and an optional query.
+ * Fetches data from a public Google Sheet using the Google Visualization API (gviz),
+ * while resolving the sheet name via the authenticated Google Sheets API.
  * @async
+ * @param {object} sheets - An authenticated Google Sheets API client instance.
  * @param {string} sheetId - The ID of the Google Sheet.
- * @param {number} gid - The GID of the specific sheet within the Google Sheets file.
- * @param {string} apiKey - The API key used for accessing the Google Sheets API.
- * @param {string} [query] - The query string to filter or manipulate the fetched data.
- * @param {number} [headers=1] - Indicates whether the first row contains headers (1) or not (0).
- * @returns {Promise<{sheetName: string|null, data: Array<Array<any>>}>} A promise that resolves to an object containing the sheet name and the fetched data array. Returns null for the sheet name and an empty array for the data if any error occurs.
+ * @param {number} gid - The GID of the specific sheet within the spreadsheet.
+ * @param {string} [query] - Optional Google Visualization API query string (tq).
+ * @param {number} [headers=1] - Indicates whether to include header row (1) or not (0).
+ * @returns {Promise<{sheetName: string|null, data: Array<Array<any>>}>}
+ * A promise that resolves to an object containing the sheet name and the fetched data array.
+ * Returns null for the sheet name and an empty array for the data if any error occurs.
  */
-const fetchDataFromGoogleSheet = async (sheetId, gid, apiKey, query, headers) => {
-    const sheetName = await getSheetNameByGid(sheetId, gid, apiKey);
+const fetchDataFromGoogleSheet = async (sheets, sheetId, gid, query, headers) => {
+    const sheetName = await getSheetNameByGid(sheets, sheetId, gid);
     if (!sheetName) {
         console.error(`Sheet with GID ${gid} not found in spreadsheet ${sheetId}`);
         return { sheetName: null, data: [] };
     }
 
     try {
-        let url = `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?gid=${gid}&key=${apiKey}`;
+        let url = `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?gid=${gid}`;
 
         // Append the query string if a query is present
         if (query) {
