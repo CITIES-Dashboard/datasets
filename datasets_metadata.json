@@ -77,6 +77,12 @@
         {
           "name": "daily-food-waste-3-meals",
           "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/food-waste/daily-food-waste-3-meals.csv",
+          "version": "2026-04-02",
+          "sizeInBytes": 74823
+        },
+        {
+          "name": "daily-food-waste-3-meals",
+          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/d76c9e3e084a4b28df1b7613078c9418643a509f/food-waste/daily-food-waste-3-meals.csv",
           "version": "2026-02-13",
           "sizeInBytes": 74823
         },
@@ -343,6 +349,19 @@
           "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/81b9575b57a9c42700b351fb305da2e96d6d0cc3/printing/raw-soft-cap-periods-_6m_.csv",
           "version": "2024-10-31",
           "sizeInBytes": 1782979
+        }
+      ]
+    }
+  ],
+  "commuting": [
+    {
+      "id": "1525800564",
+      "versions": [
+        {
+          "name": "all-home-addresses",
+          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/commuting/all-home-addresses.csv",
+          "version": "2026-04-02",
+          "sizeInBytes": 101942
         }
       ]
     }
