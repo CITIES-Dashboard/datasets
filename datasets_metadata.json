@@ -222,6 +222,12 @@
         {
           "name": "raw-monthly",
           "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/main/printing/raw-monthly.csv",
+          "version": "2026-07-07",
+          "sizeInBytes": 11343543
+        },
+        {
+          "name": "raw-monthly",
+          "rawLink": "https://raw.githubusercontent.com/CITIES-Dashboard/datasets/9263ae348158d96190a2391bf47d8e5619010d0c/printing/raw-monthly.csv",
           "version": "2026-06-04",
           "sizeInBytes": 11177987
         },
